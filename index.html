@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <div class="content">
+            <img src="nuestra_foto.jpg" alt="Foto Nuestra" class="small-photo">
+            <p class="message">Mi princesa hermosa, quiero decirte que te amo mucho y que eres el amor de mi vida, de verdad te amo demasiado </p>
+        </div>
+        <button class="arrow right" onclick="nextPage(2)">
+            <img src="heart-arrow.png" alt="Flecha de Amor">
+        </button>
+    </div>
+
+    <div class="container" id="page2" style="display:none;">
+        <p class="message">Una carta más para ti mi amor :3, te amo mucho y no me cansaré de decírtelo, el tiempo pasa rápido cuando estoy contigo, pero lento cuando no te tengo a mi lado, pasó ya bastante tiempo desde que supimos de nosotros, y en todo este tiempo supe que tú eres el amor de mi vida, pase lo que pase, lo eres, te amo mucho mi amor, ya tengo que ir a tu casita muak </p>
+        <div class="heart">&#10084;</div>
+        <button class="arrow right" onclick="nextPage(4)">
+            <img src="heart-arrow.png" alt="Flecha de Amor">
+        </button>
+        <button class="arrow left" onclick="previousPage(1)">
+            <img src="heart-arrow.png" alt="Flecha de Amor" class="flip-horizontal">
+        </button>
+    </div>
+    
+    <div class="container" id="page4" style="display:none;">
+        <p class="message">No tienes ni idea de lo mucho que te amo, mi esposa hermosa, siempre piensa en mi 💖</p>
+        <button class="arrow left" onclick="previousPage(2)">
+            <img src="heart-arrow.png" alt="Flecha de Amor" class="flip-horizontal">
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

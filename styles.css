@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffd1dc; /* Color de fondo romántico */
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.container.hidden {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo transparente para mejor lectura */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.small-photo {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.message {
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 500px;
+}
+
+.heart {
+    font-size: 5rem;
+    color: red;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.arrow img {
+    width: 75px; /* Ajusta este valor según el tamaño que desees */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+.arrow.left {
+    left: 20px;
+
+}
+
+.arrow:hover img {
+    transform: scale(1.1);
+}
+.flip-horizontal {
+    transform: scaleX(-1);
+    display: inline-block; /* Asegura que la transformación se aplique correctamente */
+}
